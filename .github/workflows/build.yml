@@ -26,8 +26,8 @@ jobs:
 
       - name: Publish project
         run: dotnet publish -c Release -o ./publish
-
-      - name: Deploy to Azure Web App
+      # Azure deployment pipeline
+      - name: Deploy to Azure Web app
         uses: azure/webapps-deploy@v3
         with:
           app-name: Nikhil-webapp
